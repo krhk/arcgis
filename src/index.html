@@ -11,8 +11,8 @@
 	<!-- ESRI-->
 	<link rel="stylesheet" href="https://hubcdn.arcgis.com/opendata-ui/assets/assets/opendata-aa53be13914d1cab82445289ee605c03.css">
 	<link rel="stylesheet" href="https://hubcdn.arcgis.com/opendata-ui/assets/assets/vendor-a700dba94ff57b3cd494889d928556c7.css">
-	<link rel="stylesheet" href="https://raw.githack.com/f00b4r/windtail/master/dist/arcgis.css?family=Poppins">
-	<link rel="stylesheet" href="https://rawcdn.githack.com/f00b4r/windtail/963057853a72b3baf0598077db99537df5f33575/dist/arcgis.min.css?family=Poppins">
+	<link rel="stylesheet" href="https://rawcdn.githack.com/f00b4r/windtail/a43c16c268c34897e17ea2541d1eedeb84e9a073/dist/arcgis.css">
+	<!-- <link rel="stylesheet" href="https://rawcdn.githack.com/f00b4r/windtail/master/dist/arcgis.min.css?family=Poppins"> -->
 	<link rel="stylesheet" href="./esri/esri.css">
 	<!-- /ESRI-->
 
@@ -32,114 +32,238 @@
 </head>
 
 <body class="calcite">
-	<!-- esri-header-->
-	<div class="custom-header">
-		<!-- header -->
-		<div class="navbar tw-flex tw-justify-center tw-items-end tw-text-3xl">
-			<div class="dropdown dropdown-hover tw-py-4">
-				<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none" data-toggle="dropdown">OTEVŘENÁ <br>DATA</button>
-				<div class="dropdown-menu tw-m-0 tw-border-0">
-					<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
-						<a class="tw-whitespace-nowrap tw-text-black" href="https://homepage-khk-gis.hub.arcgis.com">DATOVÝ KATALOG</a>
-						<a class="tw-whitespace-nowrap tw-text-black" href="https://homepage-khk-gis.hub.arcgis.com">ZDROJE DAT</a>
+	<div class="xl:tw-max-w-screen-xl tw-mx-auto tw-space-y-16 tw-py-16 tw-px-4 xl:tw-px-0">
+		<div class="tw-space-y-8">
+			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">MENU</div>
+			<div class="tw-bg-secondary">
+				<!-- copy & paste -->
+				<div class="navbar hidden tw-flex-important tw-flex-col md:tw-flex-row tw-justify-center md:tw-items-end tw-text-2xl xl:tw-text-4xl md:tw-space-x-8 md:tw-h-32">
+					<div class="tw-py-4 tw-h-32">
+						<a href="#">
+							<img class="tw-h-full tw-object-contain" src="https://hradec.rozhlas.cz/sites/default/files/images/02450998.jpeg">
+						</a>
+					</div>
+					<div class="dropdown dropdown-hover tw-py-4">
+						<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle="dropdown">OTEVŘENÁ <br class="tw-hidden md:tw-block">DATA</button>
+						<div class="dropdown-menu tw-m-0 tw-border-0">
+							<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://homepage-khk-gis.hub.arcgis.com">DATOVÝ KATALOG</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://homepage-khk-gis.hub.arcgis.com">ZDROJE DAT</a>
+							</div>
+						</div>
+					</div>
+					<div class="dropdown dropdown-hover tw-py-4">
+						<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle=" dropdown">APLIKACE A <br class="tw-hidden md:tw-block">INFOGRAFIKY</button>
+						<div class="dropdown-menu tw-m-0 tw-border-0">
+							<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://homepage-khk-gis.hub.arcgis.com">ROZCESTNÍK APLIKACÍ</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://homepage-khk-gis.hub.arcgis.com">DATOVÉ KARTY DASHBOARDY A GRAFY</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://homepage-khk-gis.hub.arcgis.com">PUBLIKACE</a>
+							</div>
+						</div>
+					</div>
+					<div class="dropdown dropdown-hover tw-py-4">
+						<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle=" dropdown">ZPRÁVA O <br class="tw-hidden md:tw-block">STAVU KRAJE</button>
+						<div class="dropdown-menu tw-m-0 tw-border-0">
+							<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://homepage-khk-gis.hub.arcgis.com">STRATEGIE ROZVOJE KRAJE A JEJÍ NAPLŇOVÁNÍ </a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://homepage-khk-gis.hub.arcgis.com">STRATEGICKÁ MAPA KRAJE</a>
+							</div>
+						</div>
+					</div>
+					<div class="dropdown dropdown-hover tw-py-4">
+						<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle=" dropdown">STAŇTE SE <br class="tw-hidden md:tw-block">SOUČÁSTÍ PORTÁLU</button>
+						<div class="dropdown-menu tw-m-0 tw-border-0">
+							<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://homepage-khk-gis.hub.arcgis.com">HACKATHONY</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://homepage-khk-gis.hub.arcgis.com">SDÍLEJTE VAŠE DATA A APLIKACE</a>
+							</div>
+						</div>
+					</div>
+					<div class="dropdown dropdown-hover tw-py-4">
+						<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle="dropdown">KONTAKTUJTE <br class="tw-hidden md:tw-block">NÁS</button>
+						<div class="dropdown-menu tw-m-0 tw-border-0">
+							<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">KDO JSME</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer tw-text-3xl" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">ZPĚTNÁ VAZBA (FEEDBACK)</a>
+							</div>
+						</div>
 					</div>
 				</div>
+				<!-- /copy & paste -->
 			</div>
-			<div class="dropdown dropdown-hover tw-py-4">
-				<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none" data-toggle=" dropdown">APLIKACE A <br>INFOGRAFIKY</button>
-				<div class="dropdown-menu tw-m-0 tw-border-0">
-					<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
-						<a class="tw-whitespace-nowrap  tw-text-black" href="https://homepage-khk-gis.hub.arcgis.com">ROZCESTNÍK APLIKACÍ</a>
-						<a class="tw-whitespace-nowrap  tw-text-black" href="https://homepage-khk-gis.hub.arcgis.com">DATOVÉ KARTY DASHBOARDY A GRAFY</a>
-						<a class="tw-whitespace-nowrap  tw-text-black" href="https://homepage-khk-gis.hub.arcgis.com">PUBLIKACE</a>
+		</div>
+		<div class="tw-space-y-8">
+			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">CARDS</div>
+			<div>
+				<!-- copy & paste -->
+				<div class="tw-grid  tw-grid-cols-1 xl:tw-grid-cols-3 tw-gap-4">
+					<div class="tw-border tw-border-solid tw-border-gray-200 tw-shadow">
+						<div class="">
+							<img class="tw-object-fill tw-w-full" src="https://via.placeholder.com/640x320" alt="Local Perspective Map View">
+						</div>
+						<div class="tw-p-4 tw-bg-white">
+							<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655">Nejaky titulek</a></h4>
+							<p>Nejaky popisek</p>
+							<a href="https://seznam.cz" class="tw-block tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+						</div>
+					</div>
+					<div class="tw-border tw-border-solid tw-border-gray-200 tw-shadow">
+						<div class="">
+							<img class="tw-object-fill tw-w-full" src="https://via.placeholder.com/640x320" alt="Local Perspective Map View">
+						</div>
+						<div class="tw-p-4 tw-bg-white">
+							<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655">Nejaky titulek</a></h4>
+							<p>Nejaky popisek</p>
+							<a href="https://seznam.cz" class="tw-block tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+						</div>
+					</div>
+					<div class="tw-border tw-border-solid tw-border-gray-200 tw-shadow">
+						<div class="">
+							<img class="tw-object-fill tw-w-full" src="https://via.placeholder.com/640x320" alt="Local Perspective Map View">
+						</div>
+						<div class="tw-p-4 tw-bg-white">
+							<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655">Nejaky titulek</a></h4>
+							<p>Nejaky popisek</p>
+							<a href="https://seznam.cz" class="tw-block tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+						</div>
 					</div>
 				</div>
+				<div class="tw-text-center tw-my-8">
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-3xl">Click me</a>
+				</div>
+				<!-- /copy & paste -->
 			</div>
-			<div class="dropdown dropdown-hover tw-py-4">
-				<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none" data-toggle=" dropdown">ZPRÁVA O <br>STAVU KRAJE</button>
-				<div class="dropdown-menu tw-m-0 tw-border-0">
-					<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
-						<a class="tw-whitespace-nowrap  tw-text-black" href="https://homepage-khk-gis.hub.arcgis.com">STRATEGIE ROZVOJE KRAJE A JEJÍ NAPLŇOVÁNÍ </a>
-						<a class="tw-whitespace-nowrap  tw-text-black" href="https://homepage-khk-gis.hub.arcgis.com">STRATEGICKÁ MAPA KRAJE</a>
-					</div>
+		</div>
+		<div class="tw-space-y-8">
+			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">BUTTONS</div>
+			<div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-4xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-3xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-2xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-base">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-sm">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-xs">Click me</a>
+					<!-- /copy & paste -->
+				</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-4xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-3xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-2xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-base">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-sm">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-xs">Click me</a>
+					<!-- /copy & paste -->
+				</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-4xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-3xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-2xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-base">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-sm">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-xs">Click me</a>
+					<!-- /copy & paste -->
 				</div>
 			</div>
-			<div class="dropdown dropdown-hover tw-py-4">
-				<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none" data-toggle=" dropdown">STAŇTE SE <br>SOUČÁSTÍ PORTÁLU</button>
-				<div class="dropdown-menu tw-m-0 tw-border-0">
-					<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
-						<a class="tw-whitespace-nowrap  tw-text-black" href="https://homepage-khk-gis.hub.arcgis.com">HACKATHONY</a>
-						<a class="tw-whitespace-nowrap  tw-text-black" href="https://homepage-khk-gis.hub.arcgis.com">SDÍLEJTE VAŠE DATA A APLIKACE</a>
-					</div>
+			<div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-4xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-3xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-2xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-base">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-sm">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-xs">Click me</a>
+					<!-- /copy & paste -->
 				</div>
-			</div>
-			<div class="dropdown dropdown-hover tw-py-4">
-				<button class="dropdown-toggle tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none" data-toggle="dropdown">KONTAKTUJTE <br>NÁS</button>
-				<div class="dropdown-menu tw-m-0 tw-border-0">
-					<div class="tw-flex tw-flex-col tw-px-4 tw-space-y-4">
-						<a class="tw-whitespace-nowrap  tw-text-black" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">KDO JSME</a>
-						<a class="tw-whitespace-nowrap  tw-text-black" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">ZPĚTNÁ VAZBA (FEEDBACK)</a>
-					</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-4xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-3xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-2xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-base">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-sm">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-xs">Click me</a>
+					<!-- /copy & paste -->
+				</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-4xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-3xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-2xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-base">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-sm">Click me</a>
+					<a href="https://seznam.cz" class="tw-text-center tw-rounded-lg hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-secondary tw-px-4 tw-py-2 tw-text-xs">Click me</a>
+					<!-- /copy & paste -->
 				</div>
 			</div>
 		</div>
-		<!-- /header-->
-	</div>
-	<!-- /esri-header-->
-
-	<!-- escri-content-->
-	<div class="content">
-
-		<div class="tw-my-16">
-
-			<!-- cards-->
-			<h3>Nadpis</h3>
-			<div class="tw-grid tw-grid-cols-3 tw-gap-4">
-				<div class="tw-border-2 tw-border-gray-600 tw-shadow-md">
-					<div class="">
-						<img class="tw-object-fill tw-w-full" src="https://via.placeholder.com/640x320" alt="Local Perspective Map View">
-					</div>
-					<div class="tw-p-4 tw-bg-white">
-						<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655">Nejaky titulek</a></h4>
-						<p>Nejaky popisek</p>
-						<div aria-label="actions" class="btn-group btn-group-justified" role="group">
-							<a class="btn btn-primary" href="#">Click me</a>
-						</div>
-					</div>
+		<div class="tw-space-y-8">
+			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">MAIN ICONS</div>
+			<div class="tw-bg-secondary">
+				<!-- copy & paste -->
+				<div class="tw-flex">
+					<a href="#" class="tw-relative tw-block">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kraj_bila.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kraj_cervena.svg">
+					</a>
+					<a href="#" class="tw-relative tw-block">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_demografie_bila.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_demografie_cervena.svg">
+					</a>
+					<a href="#" class="tw-relative tw-block">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_ekonomika_bila.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_ekonomika_cervena.svg">
+					</a>
+					<a href="#" class="tw-relative tw-block">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zdravotnictvi_bila.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zdravotnictvi_cervena.svg">
+					</a>
+					<a href="#" class="tw-relative tw-block">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_izs_bila.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_izs_cervena.svg">
+					</a>
+					<a href="#" class="tw-relative tw-block">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_skolstvi_bila.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_skolstvi_cervena.svg">
+					</a>
+					<a href="#" class="tw-relative tw-block">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_doprava_bila.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_doprava_cervena.svg">
+					</a>
+					<a href="#" class="tw-relative tw-block">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zp_bila.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zp_cervena.svg">
+					</a>
 				</div>
-				<div class="tw-border-2 tw-border-gray-600 tw-shadow-md">
-					<div class="">
-						<img class="tw-object-fill tw-w-full" src="https://via.placeholder.com/640x320" alt="Local Perspective Map View">
-					</div>
-					<div class="tw-p-4 tw-bg-white">
-						<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655">Nejaky titulek</a></h4>
-						<p>Nejaky popisek</p>
-						<div aria-label="actions" class="btn-group btn-group-justified" role="group">
-							<a class="btn btn-primary" href="#">Click me</a>
-						</div>
-					</div>
-				</div>
-				<div class="tw-border-2 tw-border-gray-600 tw-shadow-md">
-					<div class="">
-						<img class="tw-object-fill tw-w-full" src="https://via.placeholder.com/640x320" alt="Local Perspective Map View">
-					</div>
-					<div class="tw-p-4 tw-bg-white">
-						<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655">Nejaky titulek</a></h4>
-						<p>Nejaky popisek</p>
-						<div aria-label="actions" class="btn-group btn-group-justified" role="group">
-							<a class="btn btn-primary" href="#">Click me</a>
-						</div>
-					</div>
-				</div>
+				<!-- /copy & paste -->
 			</div>
-			<div class="tw-text-center tw-my-8">
-				<a href="http://solutions.arcgis.com" class="btn btn-primary">Všechny novinky</a>
+		</div>
+		<div class="tw-space-y-8">
+			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">CAROUSEL</div>
+			<div>
+				<!-- copy & paste -->
+				TODO
+				<!-- /copy & paste -->
 			</div>
-			<!-- /cards -->
-
 		</div>
 	</div>
-	<!-- /escri-content-->
 </body>
 
 </html>
