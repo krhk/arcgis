@@ -6,3 +6,9 @@ dev:
 
 build:
 	npm run build
+
+deploy:
+	vc
+
+publish:
+	vc --prod
