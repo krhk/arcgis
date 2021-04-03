@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="tw-w-screen">
 
 <head>
 	<meta charset="utf-8" />
@@ -11,7 +11,7 @@
 	<!-- ESRI-->
 	<link rel="stylesheet" href="https://hubcdn.arcgis.com/opendata-ui/assets/assets/opendata-aa53be13914d1cab82445289ee605c03.css">
 	<link rel="stylesheet" href="https://hubcdn.arcgis.com/opendata-ui/assets/assets/vendor-a700dba94ff57b3cd494889d928556c7.css">
-	<link rel="stylesheet" href="https://rawcdn.githack.com/f00b4r/windtail/fb31ead1be94bfd1c4e1e277ae3287d14321da7c/dist/arcgis.css">
+	<link rel="stylesheet" href="https://rawcdn.githack.com/f00b4r/windtail/2c52b5496c9eedee043838e253fdf259ab4eb075/dist/arcgis.css">
 	<!-- <link rel="stylesheet" href="https://rawcdn.githack.com/f00b4r/windtail/master/dist/arcgis.min.css?family=Poppins"> -->
 	<link rel="stylesheet" href="./esri/esri.css">
 	<!-- /ESRI-->
@@ -31,61 +31,61 @@
 	<!-- /ESRI-->
 </head>
 
-<body class="calcite">
-	<div class="xl:tw-max-w-screen-xl tw-mx-auto tw-space-y-16 tw-py-16 tw-px-4 xl:tw-px-0">
-		<div class="tw-space-y-8">
+<body class="calcite tw-w-screen">
+	<div class="tw-max-w-full xl:tw-max-w-screen-xl tw-mx-auto tw-space-y-16 tw-py-16 tw-px-4 xl:tw-px-0">
+		<div class="tw-space-y-8 custom-header">
 			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">MENU</div>
 			<div class="tw-bg-secondary">
 				<!-- copy & paste -->
-				<div class="navbar hidden tw-flex-important tw-flex-col md:tw-flex-row tw-justify-center md:tw-items-end tw-text-2xl xl:tw-text-4xl md:tw-space-x-8 md:tw-h-32">
-					<div class="tw-py-4 tw-h-32">
-						<a href="#">
-							<img class="tw-h-full tw-object-contain" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_khk_bile.svg">
+				<div class="navbar hidden tw-flex-important tw-flex-col md:tw-flex-row tw-justify-center md:tw-items-end tw-text-2xl xl:tw-text-4xl md:tw-h-32">
+					<div class="tw-h-full">
+						<a class="tw-h-full tw-block" href="#">
+							<img class="tw-w-64 md:tw-w-auto md:tw-h-full" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_DP_header.svg">
 						</a>
 					</div>
-					<div class="dropdown dropdown-hover tw-py-4">
+					<div class="dropdown dropdown-hover tw-py-4 tw-border-0 md:tw-border-l-2 md:tw-border-r-2 tw-border-white tw-border-solid">
 						<button class="dropdown-toggle tw-px-8 tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle="dropdown">OTEVŘENÁ <br class="tw-hidden md:tw-block">DATA</button>
 						<div class="dropdown-menu tw-m-0 tw-border-0 tw-p-0">
 							<div class="tw-flex tw-flex-col tw-px-8 tw-space-y-8 tw-py-8 tw-bg-gray-100">
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">DATOVÝ KATALOG</a>
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">ZDROJE DAT</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">DATOVÝ KATALOG</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">ZDROJE DAT</a>
 							</div>
 						</div>
 					</div>
-					<div class="dropdown dropdown-hover tw-py-4">
-						<button class="dropdown-toggle tw-px-8 tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle=" dropdown">APLIKACE A <br class="tw-hidden md:tw-block">INFOGRAFIKY</button>
+					<div class="dropdown dropdown-hover tw-py-4 tw-border-0 md:tw-border-r-2 tw-border-white tw-border-solid">
+						<button class="dropdown-toggle tw-px-8 tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle="dropdown">APLIKACE A <br class="tw-hidden md:tw-block">INFOGRAFIKY</button>
 						<div class="dropdown-menu tw-m-0 tw-border-0 tw-p-0">
 							<div class="tw-flex tw-flex-col tw-px-8 tw-space-y-8 tw-py-8 tw-bg-gray-100">
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">ROZCESTNÍK APLIKACÍ</a>
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">DATOVÉ KARTY DASHBOARDY A GRAFY</a>
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">PUBLIKACE</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">ROZCESTNÍK APLIKACÍ</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">DATOVÉ KARTY DASHBOARDY A GRAFY</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">PUBLIKACE</a>
 							</div>
 						</div>
 					</div>
-					<div class="dropdown dropdown-hover tw-py-4">
-						<button class="dropdown-toggle tw-px-8 tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle=" dropdown">ZPRÁVA O <br class="tw-hidden md:tw-block">STAVU KRAJE</button>
+					<div class="dropdown dropdown-hover tw-py-4 tw-border-0 md:tw-border-r-2 tw-border-white tw-border-solid">
+						<button class="dropdown-toggle tw-px-8 tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle="dropdown">ZPRÁVA O <br class="tw-hidden md:tw-block">STAVU KRAJE</button>
 						<div class="dropdown-menu tw-m-0 tw-border-0 tw-p-0">
 							<div class="tw-flex tw-flex-col tw-px-8 tw-space-y-8 tw-py-8 tw-bg-gray-100">
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">STRATEGIE ROZVOJE KRAJE A JEJÍ NAPLŇOVÁNÍ </a>
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">STRATEGICKÁ MAPA KRAJE</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">STRATEGIE ROZVOJE KRAJE A JEJÍ NAPLŇOVÁNÍ </a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">STRATEGICKÁ MAPA KRAJE</a>
 							</div>
 						</div>
 					</div>
-					<div class="dropdown dropdown-hover tw-py-4">
-						<button class="dropdown-toggle tw-px-8 tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle=" dropdown">STAŇTE SE <br class="tw-hidden md:tw-block">SOUČÁSTÍ PORTÁLU</button>
+					<div class="dropdown dropdown-hover tw-py-4 tw-border-0 md:tw-border-r-2 tw-border-white tw-border-solid">
+						<button class="dropdown-toggle tw-px-8 tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle="dropdown">STAŇTE SE <br class="tw-hidden md:tw-block">SOUČÁSTÍ PORTÁLU</button>
 						<div class="dropdown-menu tw-m-0 tw-border-0 tw-p-0">
 							<div class="tw-flex tw-flex-col tw-px-8 tw-space-y-8 tw-py-8 tw-bg-gray-100">
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">HACKATHONY</a>
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">SDÍLEJTE VAŠE DATA A APLIKACE</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">HACKATHONY</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://homepage-khk-gis.hub.arcgis.com">SDÍLEJTE VAŠE DATA A APLIKACE</a>
 							</div>
 						</div>
 					</div>
-					<div class="dropdown dropdown-hover tw-py-4">
+					<div class="dropdown dropdown-hover tw-py-4 tw-border-0 md:tw-border-r-2 tw-border-white tw-border-solid">
 						<button class="dropdown-toggle tw-px-8 tw-border-0 tw-bg-transparent tw-text-white focus:tw-outline-none focus:tw-shadow-none tw-text-left" data-toggle="dropdown">KONTAKTUJTE <br class="tw-hidden md:tw-block">NÁS</button>
 						<div class="dropdown-menu tw-m-0 tw-border-0 tw-p-0">
 							<div class="tw-flex tw-flex-col tw-px-8 tw-space-y-8 tw-py-8 tw-bg-gray-100">
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">KDO JSME</a>
-								<a class="tw-text-4xl tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">ZPĚTNÁ VAZBA (FEEDBACK)</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">KDO JSME</a>
+								<a class="tw-whitespace-nowrap tw-text-black tw-cursor-pointer" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">ZPĚTNÁ VAZBA (FEEDBACK)</a>
 							</div>
 						</div>
 					</div>
@@ -99,48 +99,70 @@
 				<!-- copy & paste -->
 				<div class="tw-grid  tw-grid-cols-1 xl:tw-grid-cols-3 tw-gap-4">
 					<div class="tw-border tw-border-solid tw-border-gray-400">
-						<div class="">
-							<img class="tw-object-fill tw-w-full" src="https://via.placeholder.com/640x320" alt="Local Perspective Map View">
+						<div>
+							<img class="tw-object-fill tw-w-full" src="https://picsum.photos/640/320" alt="Local Perspective Map View">
 						</div>
 						<div class="tw-p-4 tw-bg-white">
-							<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655">Nejaky titulek</a></h4>
+							<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655" class="tw-text-secondary hover:tw-text-secondary hover:tw-underline">Nejaky titulek</a></h4>
 							<div class="tw-font-bold">01.10.2021</div>
 							<p>Nejaky popisek</p>
 						</div>
 						<div class="tw-p-4">
-							<a href="https://seznam.cz" class="tw-block tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+							<a href="https://seznam.cz" class="tw-button tw-button-blue">
+								<span class="tw-button-label">Click me</span>
+							</a>
 						</div>
 					</div>
 					<div class="tw-border tw-border-solid tw-border-gray-400">
-						<div class="">
-							<img class="tw-object-fill tw-w-full" src="https://via.placeholder.com/640x320" alt="Local Perspective Map View">
+						<div>
+							<img class="tw-object-fill tw-w-full" src="https://picsum.photos/640/320" alt="Local Perspective Map View">
 						</div>
 						<div class="tw-p-4 tw-bg-white">
-							<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655">Nejaky titulek</a></h4>
+							<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655" class="tw-text-secondary hover:tw-text-secondary hover:tw-underline">Nejaky titulek</a></h4>
 							<div class="tw-font-bold">01.10.2021</div>
 							<p>Nejaky popisek</p>
 						</div>
 						<div class="tw-p-4">
-							<a href="https://seznam.cz" class="tw-block tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+							<a href="https://seznam.cz" class="tw-button tw-button-blue">
+								<span class="tw-button-label">Click me</span>
+							</a>
 						</div>
 					</div>
 					<div class="tw-border tw-border-solid tw-border-gray-400">
-						<div class="">
-							<img class="tw-object-fill tw-w-full" src="https://via.placeholder.com/640x320" alt="Local Perspective Map View">
+						<div>
+							<img class="tw-object-fill tw-w-full" src="https://picsum.photos/640/320" alt="Local Perspective Map View">
 						</div>
 						<div class="tw-p-4 tw-bg-white">
-							<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655">Nejaky titulek</a></h4>
+							<h4><a href="http://www.arcgis.com/home/item.html?id=6e02b538bea841ed858ef9f52709b655" class="tw-text-secondary hover:tw-text-secondary hover:tw-underline">Nejaky titulek</a></h4>
 							<div class="tw-font-bold">01.10.2021</div>
 							<p>Nejaky popisek</p>
 						</div>
 						<div class="tw-p-4">
-							<a href="https://seznam.cz" class="tw-block tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-lg">Click me</a>
+							<a href="https://seznam.cz" class="tw-button tw-button-blue">
+								<span class="tw-button-label">Click me</span>
+							</a>
 						</div>
 					</div>
 				</div>
 				<div class="tw-text-center tw-my-8">
-					<a href="https://seznam.cz" class="tw-text-center hover:tw-no-underline hover:tw-text-white tw-text-white tw-bg-primary tw-px-4 tw-py-2 tw-text-3xl">Click me</a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red">
+						<span class="tw-button-label">Click me</span>
+					</a>
 				</div>
+				<!-- /copy & paste -->
+			</div>
+		</div>
+		<div class="tw-space-y-8">
+			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">TEXTS</div>
+			<div>
+				<!-- copy & paste -->
+				<div class="tw-text-primary">Lorem lipsum</div>
+				<div class="tw-text-secondary">Lorem lipsum</div>
+				<div class="tw-text-black">Lorem lipsum</div>
+				<div class="tw-text-primary tw-font-bold">Lorem lipsum</div>
+				<div class="tw-text-secondary tw-italic">Lorem lipsum</div>
+				<div class="tw-text-black tw-underline">Lorem lipsum</div>
+				<div class="tw-text-white tw-bg-black">Lorem lipsum</div>
 				<!-- /copy & paste -->
 			</div>
 		</div>
@@ -225,62 +247,142 @@
 			<div>
 				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
 					<!-- copy & paste -->
-					<a href="https://seznam.cz" class="tw-button tw-button-red">
-						<span class="tw-button-label">I'm a link</span>
-					</a>
-					<a href="https://seznam.cz" class="tw-button tw-button-blue">
-						<span class="tw-button-label">I'm a link</span>
-					</a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-text-4xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-text-3xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-text-2xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-text-xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-text-lg"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-text-base"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-text-sm"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-text-xs"> <span class="tw-button-label">I'm a link</span> </a>
+					<!-- /copy & paste -->
+				</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-font-bold tw-text-4xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-font-bold tw-text-3xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-font-bold tw-text-2xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-font-bold tw-text-xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-font-bold tw-text-lg"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-font-bold tw-text-base"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-font-bold tw-text-sm"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-font-bold tw-text-xs"> <span class="tw-button-label">I'm a link</span> </a>
+					<!-- /copy & paste -->
+				</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-uppercase tw-font-bold tw-text-4xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-uppercase tw-font-bold tw-text-3xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-uppercase tw-font-bold tw-text-2xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-uppercase tw-font-bold tw-text-xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-uppercase tw-font-bold tw-text-lg"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-uppercase tw-font-bold tw-text-base"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-uppercase tw-font-bold tw-text-sm"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-red tw-uppercase tw-font-bold tw-text-xs"> <span class="tw-button-label">I'm a link</span> </a>
+					<!-- /copy & paste -->
+				</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-text-4xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-text-3xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-text-2xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-text-xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-text-lg"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-text-base"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-text-sm"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-text-xs"> <span class="tw-button-label">I'm a link</span> </a>
+					<!-- /copy & paste -->
+				</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-font-bold tw-text-4xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-font-bold tw-text-3xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-font-bold tw-text-2xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-font-bold tw-text-xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-font-bold tw-text-lg"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-font-bold tw-text-base"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-font-bold tw-text-sm"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-font-bold tw-text-xs"> <span class="tw-button-label">I'm a link</span> </a>
+					<!-- /copy & paste -->
+				</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-uppercase tw-font-bold tw-text-4xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-uppercase tw-font-bold tw-text-3xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-uppercase tw-font-bold tw-text-2xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-uppercase tw-font-bold tw-text-xl"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-uppercase tw-font-bold tw-text-lg"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-uppercase tw-font-bold tw-text-base"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-uppercase tw-font-bold tw-text-sm"> <span class="tw-button-label">I'm a link</span> </a>
+					<a href="https://seznam.cz" class="tw-button tw-button-blue tw-uppercase tw-font-bold tw-text-xs"> <span class="tw-button-label">I'm a link</span> </a>
+					<!-- /copy & paste -->
+				</div>
+			</div>
+			<div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<div class="tw-cool-links tw-p-4">
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="https://seznam.cz">Sed convallis magna eu sem</a>. In enim a arcu imperdiet malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent vitae arcu tempor neque lacinia pretium. Vivamus porttitor turpis ac leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. In dapibus augue non sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sollicitudin. Quisque tincidunt scelerisque libero. Pellentesque ipsum. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam at arcu a est sollicitudin euismod. Proin mattis lacinia justo. Suspendisse sagittis ultrices augue. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+						</p>
+					</div>
+					<!-- /copy & paste -->
+				</div>
+				<div class="tw-flex-col tw-inline-flex tw-space-y-4">
+					<!-- copy & paste -->
+					<div class="tw-cool-links tw-cool-links-red tw-bg-primary tw-text-white tw-p-4">
+						<p>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="https://seznam.cz">Sed convallis magna eu sem</a>. In enim a arcu imperdiet malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent vitae arcu tempor neque lacinia pretium. Vivamus porttitor turpis ac leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. In dapibus augue non sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sollicitudin. Quisque tincidunt scelerisque libero. Pellentesque ipsum. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam at arcu a est sollicitudin euismod. Proin mattis lacinia justo. Suspendisse sagittis ultrices augue. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+						</p>
+					</div>
 					<!-- /copy & paste -->
 				</div>
 			</div>
 		</div>
 		<div class="tw-space-y-8">
 			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">MAIN ICONS</div>
-			<div class="tw-bg-secondary">
+			<div>
 				<!-- copy & paste -->
-				<div class="tw-text-center md:tw-flex">
+				<div class="tw-grid tw-grid-cols-2 md:tw-grid-cols-5 tw-text-center">
 					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kraj_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kraj_cervena.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kraj_cervena_sedy_text.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kraj_seda.svg">
 					</a>
 					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_demografie_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_demografie_cervena.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_investice_cervena.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_investice_seda.svg">
 					</a>
 					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_ekonomika_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_ekonomika_cervena.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_ekonomika_seda.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_ekonomika_cervena_sedy_text.svg">
 					</a>
 					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zdravotnictvi_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zdravotnictvi_cervena.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zdravotnictvi_seda.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zdravotnictvi_cervena_sedy_text.svg">
 					</a>
 					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_izs_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_izs_cervena.svg">
-					</a>
-				</div>
-				<div class="tw-text-center md:tw-flex">
-					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_skolstvi_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_skolstvi_cervena.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_izs_cervena_sedy_text.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_izs_seda.svg">
 					</a>
 					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_doprava_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_doprava_cervena.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_skolstvi_cervena_sedy_text.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_skolstvi_seda.svg">
 					</a>
 					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zp_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zp_cervena.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_doprava_cervena_sedy_text.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_doprava_seda.svg">
 					</a>
 					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kultura_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kultura_cervena.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zp_cervena_sedy_text.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zp_seda.svg">
 					</a>
 					<a href="#" class="tw-relative tw-block tw-flex-grow">
-						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_covid_bila.svg">
-						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-inset-0 tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_covid_cerna.svg">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kultura_cervena_sedy_text.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_kultura_seda.svg">
+					</a>
+					<a href="#" class="tw-relative tw-block tw-flex-grow">
+						<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zp_cervena_sedy_text.svg">
+						<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/ikona_zp_seda.svg">
 					</a>
 				</div>
 				<!-- /copy & paste -->
@@ -321,16 +423,73 @@
 
 				<!-- copy & paste -->
 				<div class="md:tw-flex">
-					<div class="tw-bg-primary tw-text-white">
+					<div class="tw-bg-primary tw-text-white tw-cool-links tw-cool-links-red">
 						<div class="tw-p-8">
 							<h3 class="tw-m-0 tw-mb-4 tw-p-0">Testovaci nadpis</h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce aliquam vestibulum ipsum. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Donec vitae arcu. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Integer in sapien. Donec vitae arcu. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Aliquam erat volutpat.
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="#">Fusce aliquam vestibulum ipsum</a>. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Donec vitae arcu. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Integer in sapien. Donec vitae arcu. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Aliquam erat volutpat.
 							</p>
 						</div>
 					</div>
 					<div>
-						<img class="tw-w-full md:tw-w-auto" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/Aplikace_GIF.gif">
+						<img class="tw-w-full md:tw-w-80" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/Aplikace_GIF.gif">
+					</div>
+				</div>
+				<!-- /copy & paste -->
+			</div>
+		</div>
+		<div class="tw-space-y-8">
+			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">TABLES</div>
+			<div class="tw-space-y-16">
+				<!-- copy & paste -->
+				<table class="tw-table">
+					<thead>
+						<tr>
+							<th>Foo</th>
+							<th>Bar</th>
+							<th>Baz</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td><a href="https://seznam.cz">seznam.cz</a></td>
+							<td>lorem</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td><a href="https://seznam.cz">seznam.cz</a></td>
+							<td>lorem</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td><a href="https://seznam.cz">seznam.cz</a></td>
+							<td>lorem</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- /copy & paste -->
+			</div>
+		</div>
+		<div class="tw-space-y-8">
+			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">PARTNERS</div>
+			<div class="tw-space-y-16">
+				<!-- copy & paste -->
+				<div>
+					<h3 class="tw-text-center tw-m-0 tw-p-0 tw-text-4xl">Zapojené organizace a partneři portálu</h3>
+					<div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-text-center">
+						<a href="#" class="tw-relative tw-block tw-flex-grow">
+							<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_khk_cervene.svg">
+							<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_KHK_sede.png">
+						</a>
+						<a href="#" class="tw-relative tw-block tw-flex-grow">
+							<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_ciri.svg">
+							<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_CIRI_sede.png">
+						</a>
+						<a href="#" class="tw-relative tw-block tw-flex-grow">
+							<img class="tw-w-64 tw-opacity-0 hover:tw-opacity-100 tw-duration-300 tw-absolute tw-z-10" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_ss_otty_wichterleho.png">
+							<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_SSOW_sede.png">
+						</a>
 					</div>
 				</div>
 				<!-- /copy & paste -->
@@ -338,164 +497,173 @@
 		</div>
 		<div class="tw-space-y-8">
 			<div class="tw-text-4xl tw-border-b-2 tw-border-red-300">FOOTER</div>
-			<div class="custom-footer">
+			<div>
 				<!-- copy & paste -->
-				<div>
-					<div class="tw-mx-auto tw-px-4 sm:tw-px-6">
-						<div class="xl:tw-grid xl:tw-grid-cols-3 xl:tw-gap-8">
-							<div class="tw-grid tw-grid-cols-2 tw-gap-8 xl:tw-col-span-2">
-								<div class="md:tw-grid md:tw-grid-cols-2 md:tw-gap-8">
-									<div>
-										<h3 class="tw-text-2xl tw-font-semibold tw-tracking-wider tw-uppercase">
-											Solutions
-										</h3>
-										<ul class="tw-mt-4 tw-space-y-4">
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="tw-mt-12 md:tw-mt-0">
-										<h3 class="tw-text-2xl tw-font-semibold tw-tracking-wider tw-uppercase">
-											Solutions
-										</h3>
-										<ul class="tw-mt-4 tw-space-y-4">
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="md:tw-grid md:tw-grid-cols-2 md:tw-gap-8">
-									<div>
-										<h3 class="tw-text-2xl tw-font-semibold tw-tracking-wider tw-uppercase">
-											Solutions
-										</h3>
-										<ul class="tw-mt-4 tw-space-y-4">
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="mt-12 md:mt-0">
-										<h3 class="tw-text-2xl tw-font-semibold tw-tracking-wider tw-uppercase">
-											Solutions
-										</h3>
-										<ul class="tw-mt-4 tw-space-y-4">
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													TEST
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
+				<div class="tw-bg-gray-100">
+					<div class="container">
+						<div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-text-center">
+							<div class="tw-flex tw-justify-center tw-items-center">
+								<a href="#">
+									<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_DP_footer.svg">
+								</a>
 							</div>
-							<div class="tw-mt-8 xl:tw-mt-0">
-								<h3 class="tw-text-2xl tw-font-semibold tw-tracking-wider tw-uppercase">
-									Subscribe to our newsletter
-								</h3>
-								<p class="tw-mt-4 ">
-									The latest news, articles, and resources, sent to your inbox weekly.
-								</p>
+							<div class="tw-flex tw-justify-center tw-items-center">
+								<a href="#">
+									<img class="tw-w-80" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_chytreho_regionu.svg">
+								</a>
+							</div>
+							<div class="tw-flex tw-justify-center tw-items-center">
+								<a href="#">
+									<img class="tw-w-64" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/logo_khk_cerne.svg">
+								</a>
 							</div>
 						</div>
-						<div class="tw-mt-8 tw-border-t tw-border-gray-700 tw-pt-8 md:tw-flex md:tw-items-center md:tw-justify-between">
-							<div class="tw-flex tw-space-x-6 md:tw-order-2">
-								<a href="#" class="tw-text-gray-400 hover:tw-text-gray-300">
-									<span class="sr-only">Facebook</span>
-									<svg class="tw-h-6 tw-w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-										<path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-									</svg>
-								</a>
-								<a href="#" class="tw-text-gray-400 hover:tw-text-gray-300">
-									<span class="sr-only">Facebook</span>
-									<svg class="tw-h-6 tw-w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-										<path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-									</svg>
-								</a>
-								<a href="#" class="tw-text-gray-400 hover:tw-text-gray-300">
-									<span class="sr-only">Facebook</span>
-									<svg class="tw-h-6 tw-w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-										<path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-									</svg>
-								</a>
-								<a href="#" class="tw-text-gray-400 hover:tw-text-gray-300">
-									<span class="sr-only">Facebook</span>
-									<svg class="tw-h-6 tw-w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-										<path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-									</svg>
-								</a>
+					</div>
+					<div class="container tw-mt-16">
+						<div class="tw-mx-auto tw-px-4 sm:tw-px-6">
+							<div class="xl:tw-grid xl:tw-grid-cols-3 xl:tw-gap-8">
+								<div class="tw-grid tw-grid-cols-2 tw-gap-8 xl:tw-col-span-2">
+									<div class="md:tw-grid md:tw-grid-cols-2 md:tw-gap-8">
+										<div>
+											<h3 class="tw-m-0 tw-text-2xl tw-font-semibold tw-tracking-wider tw-uppercase">
+												XYZ
+											</h3>
+											<ul class="tw-mt-4 tw-space-y-4">
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="tw-mt-12 md:tw-mt-0">
+											<h3 class="tw-m-0 tw-text-2xl tw-font-semibold tw-tracking-wider tw-uppercase">
+												XYZ
+											</h3>
+											<ul class="tw-mt-4 tw-space-y-4">
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="md:tw-grid md:tw-grid-cols-2 md:tw-gap-8">
+										<div>
+											<h3 class="tw-m-0 tw-text-2xl tw-font-semibold tw-tracking-wider tw-uppercase">
+												XYZ
+											</h3>
+											<ul class="tw-mt-4 tw-space-y-4">
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="mt-12 md:mt-0">
+											<h3 class="tw-m-0 tw-text-2xl tw-font-semibold tw-tracking-wider tw-uppercase">
+												XYZ
+											</h3>
+											<ul class="tw-mt-4 tw-space-y-4">
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														TEST
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="tw-mt-8 xl:tw-mt-0">
+									<div>
+										Pivovarské náměstí 1245<br>
+										500 03 Hradec Králové<br>
+										+420 495 817 334<br>
+										<a href="mailto:datakhk@kr-kralovehradecky.cz">datakhk@kr-kralovehradecky.cz</a>
+									</div>
+									<div class="tw-mt-8 tw-flex tw-space-x-6 tw-items-center">
+										<a href="#" class="tw-text-gray-400 hover:tw-text-gray-300">
+											<img class="tw-w-16 tw-opacity-50 hover:tw-opacity-100" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/facebook.svg">
+										</a>
+										<a href="#" class="tw-text-gray-400 hover:tw-text-gray-300">
+											<img class="tw-w-16 tw-opacity-50 hover:tw-opacity-100" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/instagram.svg">
+										</a>
+										<a href="#" class="tw-text-gray-400 hover:tw-text-gray-300">
+											<img class="tw-w-16 tw-opacity-50 hover:tw-opacity-100" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/twitter.svg">
+										</a>
+										<a href="#" class="tw-text-gray-400 hover:tw-text-gray-300">
+											<img class="tw-w-16 tw-opacity-50 hover:tw-opacity-100" src="https://ik.imagekit.io/vapjygx9s2x/DataKHK/youtube.svg">
+										</a>
+									</div>
+								</div>
 							</div>
-							<p class="tw-mt-8 tw-text-gray-600 md:tw-mt-0 md:tw-order-1">
-								&copy; 2020 Workflow, Inc. All rights reserved.
-							</p>
+							<div class="tw-mt-16 tw-border-t tw-border-gray-700 tw-pb-16">
+								<div class="tw-text-gray-600 tw-text-center">
+									&copy; 2021 Workflow, Inc. All rights reserved.
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
