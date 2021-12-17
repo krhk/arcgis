@@ -1,4 +1,6 @@
 {
-    "scope": "projectte",
-    "name": "arcgis"
-}
+	"version": 2,
+	"github": {
+	  "silent": true
+	}
+  }
